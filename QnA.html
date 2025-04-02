@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QnA</title>
+    <!-- DaisyUi+Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="font-poppins bg-[#F4F7FF]">
+   <header>
+         <!-- Navbar -->    
+          <nav>
+    <div class="navbar bg-[#FFFFFF] top-0 left-0 w-full z-50 rounded-[15px] shadow-md ">
+        <div class="navbar-start">
+         <img src="Images/logo.png" class="h-6 w-6" alt="dev board logo">
+         <p class="text-xl">Dev<span class="font-bold">Board</span></p>
+        </div>
+      
+        <div class="navbar-end items-center">
+         <a href="http://127.0.0.1:5500/index.html">
+            <button class="btn btn-primary">
+                Back to Desk
+              </button>
+         </a> 
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- blogs section -->
+       <section class="bg-[#F4F7FF] mt-12 mb-12 rounded-[15px] shadow-md">
+            <h1 class="section-title text-2xl font-bold text-center">Blogs</h1>
+              <div class="grid grid-cols-2 md:grid-cols-1 gap-4 col-span-3 mt-8 ml-8 mr-8 bg-[#FFFFFF]">
+                <!-- b1 -->
+                <div class="card h-52 w-[1200px] mt-8 ml-8 bg-[#F4F7FF] shadow-sm p-4">
+                  <div class="card-body">
+                        <h2 class="card-title text-lg">Question-1: What are the different ways to select an element in the DOM?</h2>
+                        <p class="text-blue-800"><u>Ans:</u> <br>
+                            1.getElementById('')<br>
+                            2.getElementByClassName('')<br>
+                            3.querySelector('')/querySelectorAll('')
+                        </p>
+                    </div>
+                </div>
+                <!-- b2 -->
+                <div class="card h-52 w-[1200px] mt-4 ml-8 bg-[#F4F7FF] shadow-sm p-4">
+                    <div class="card-body">
+                          <h2 class="card-title text-lg">Question-2: What is the difference between innerHTML, innerText, and textContent?</h2>
+                          <p class="text-blue-800"><u>Ans:</u> <br>
+                              <bold>innerHTML:</bold>includes HTML tags.<br>
+                              <bold>innerText:</bold>Only visible text.<br>
+                              <bold>textContent:</bold>All text, including hidden.
+                          </p>
+                      </div>
+                  </div>
+                <!-- b3 -->
+                <div class="card h-52 w-[1200px] mt-4 ml-8 bg-[#F4F7FF] shadow-sm p-4">
+                    <div class="card-body">
+                          <h2 class="card-title text-lg">Question-3: What is event delegation in the DOM?</h2>
+                          <p class="text-blue-800"><u>Ans:</u> <br>
+                              Event delegation is a technique in the DOM where a parent element handles events for its child elements using event bubbling, reducing multiple event listeners.
+                          </p>
+                      </div>
+                  </div>
+                   
+                <!-- b4 -->
+                <div class="card h-52 w-[1200px] mt-4 ml-8 bg-[#F4F7FF] shadow-sm p-4">
+                    <div class="card-body">
+                          <h2 class="card-title text-lg">Question-4: What is event bubbling in the DOM?</h2>
+                          <p class="text-blue-800"><u>Ans:</u> <br>
+                            Event bubbling is a DOM mechanism where an event starts from the target element and moves up to its parents and activates their event handlers.
+                          </p>
+                      </div>
+                  </div>
+                <!-- b5 -->
+                <div class="card h-52 w-[1200px] mt-4 ml-8 bg-[#F4F7FF] shadow-sm p-4">
+                    <div class="card-body">
+                          <h2 class="card-title text-lg">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
+                          <p class="text-blue-800"><u>Ans:</u> <br>
+                              <bold>Create:</bold>document.createElement("")<br>
+                              <bold>Add:</bold>parent.appendChild(child)/parent.append(child)<br>
+                              <bold>Remove:</bold>element.remove()/parent.removeChild(child)
+                          </p>
+                      </div>
+                  </div>
+               
+              </div>
+          </div>
+        
+        </div>
+ 
+
+    </section>
+      
+
+     
+
+
+    
+</body>
+</html>
+

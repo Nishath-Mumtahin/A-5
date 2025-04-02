@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5th Assignment</title>
+    <!-- DaisyUi+Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="font-poppins bg-[#F4F7FF]">
+   <header>
+         <!-- Navbar -->    
+          <nav>
+    <div class="navbar bg-[#FFFFFF] top-0 left-0 w-full z-50 rounded-[15px] shadow-md ">
+        <div class="navbar-start">
+         <img src="Images/logo.png" class="h-6 w-6" alt="dev board logo">
+         <p class="text-xl">Dev<span class="font-bold">Board</span></p>
+        </div>
+      
+        <div class="navbar-end items-center">
+          <button class="btn btn-ghost btn-circle hidden sm:block">
+            <div class="indicator">
+                <img src="Images/checkbox.png" class="h-6 w-6" alt="">
+                <span class="badge badge-sm indicator-item">23</span>
+              </div>
+          </button>
+          <button class="btn btn-ghost btn-circle hidden sm:block">
+           <img src="Images/theme-btn.png" class="h-6 w-6" alt="">
+          </button>
+
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- hero section -->
+       <section class="bg-[#F4F7FF] mt-12 mb-12 rounded-[15px] shadow-md">
+        <div class="grid grid-cols-[3fr_1fr] gap-6 mt-2 ml-5 mr-5 mb-4">
+        <!-- left side -->
+          <div class="bg-[#FFFFFF]">
+            <div class="grid grid-cols-3 mt-8 ml-8 mr-8 gap-4 bg-[#FFFFFF] ">
+              <!-- 1 -->
+              <div class="card glass w-72 h-28 bg-[#F4F7FF] flex items-center p-4">
+                <div class="flex">
+                  <figure>
+                    <img
+                  class="my-4 ml-5 object-contain"
+                  src="Images/checkbox.png" />
+                  </figure>
+                  <div class="card-body">
+                    <p>Task Assigned</p>
+                    <h2 class="card-title">50 </h2>
+                   </div>
+                </div>
+              </div>
+              <!-- 2 -->
+               <a href="http://127.0.0.1:5500/QnA.html">
+                <div class="card glass w-80 h-28 mr-20 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] flex justify-between items-center">
+                  <div class="flex">
+                    <figure>
+                      <img
+                    class="my-4 ml-5 object-contain"
+                    src="Images/board.png" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title text-white">Discover Something New Today! </h2>
+                     </div>
+                  </div>
+                </div>
+               </a>
+              <!-- 3 -->
+              <div class="card glass ml-6 w-72 h-28 bg-[#F4F7FF] flex items-center p-4">
+                <div class="flex">
+                  <figure>
+                    <img
+                  class="my-4 ml-5 object-contain"
+                  src="Images/calender.png" />
+                  </figure>
+                  <div class="card-body">
+                    <p>Wed,</p>
+                    <h2 class="card-title">Apr 2,2025</h2>
+                   </div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Completed section -->
+              <div class="grid grid-cols-2 md:grid-cols-3 gap-4 col-span-3 mt-8 ml-8 mr-8">
+                <!-- c1 -->
+                <div class="card w-72 bg-[#F4F7FF] shadow-sm p-4">
+                  <div class="card-body">
+                    <div class="justify-start">
+                      <button class="btn">ShopEase</button>
+                    </div>
+                    <h2 class="card-title text-lg">Fix Mobile Button Issue </h2>
+                    <button class="btn text-gray-400 text-xs font-thin">Debug, check overlaps, verify onClick.</button>
+                    <div class="flex mt-5">
+                      <div>
+                        <p class="text-gray-400">Deadline</p>
+                        <h2 class="card-title text-lg whitespace-nowrap">21 March 2025</h2>
+                      </div>
+                      <button class="btn btn-primary mt-3 ml-3">Completed</button>
+                    </div>
+                    
+                  </div>
+                </div>
+                <!-- c2 -->
+                <div class="card w-72 bg-[#F4F7FF] shadow-sm p-4">
+                  <div class="card-body">
+                    <div class="justify-start">
+                      <button class="btn">CloudSync</button>
+                    </div>
+                    <h2 class="card-title text-lg">Add Dark Mode </h2>
+                    <button class="btn text-gray-400  text-xs font-thin">Store user preferences, update CSS, apply transition.</button>
+                    <div class="flex mt-5">
+                      <div>
+                        <p class="text-gray-400">Deadline</p>
+                        <h2 class="card-title text-lg whitespace-nowrap">21 March 2025</h2>
+                      </div>
+                      <button class="btn btn-primary mt-3 ml-3">Completed</button>
+                    </div>
+                    
+                  </div>
+                </div>
+                <!-- c3 -->
+                <div class="card w-72 bg-[#F4F7FF] shadow-sm p-4">
+                  <div class="card-body">
+                    <div class="justify-start">
+                      <button class="btn">SwiftPay</button>
+                    </div>
+                    <h2 class="card-title text-lg">Optimize  Home page</h2>
+                    <button class="btn text-gray-400 text-xs font-thin">Debug, check overlaps, verify onClick.</button>
+                    <div class="flex mt-5">
+                      <div>
+                        <p class="text-gray-400">Deadline</p>
+                        <h2 class="card-title text-lg whitespace-nowrap">21 March 2025</h2>
+                      </div>
+                      <button class="btn btn-primary mt-3 ml-3">Completed</button>
+                    </div>
+                    
+                  </div>
+                </div>
+                <!-- c4 -->
+                <div class="card w-72 bg-[#F4F7FF] shadow-sm p-4">
+                  <div class="card-body">
+                    <div class="justify-start">
+                      <button class="btn">Meta</button>
+                    </div>
+                    <h2 class="card-title text-lg">Add new emoji 🤲</h2>
+                    <button class="btn text-gray-400 text-xs font-thin">Debug, check overlaps, verify onClick.</button>
+                    <div class="flex mt-5">
+                      <div>
+                        <p class="text-gray-400">Deadline</p>
+                        <h2 class="card-title text-lg whitespace-nowrap">21 March 2025</h2>
+                      </div>
+                      <button class="btn btn-primary mt-3 ml-3">Completed</button>
+                    </div>
+                    
+                  </div>
+                </div>
+                <!-- c5 -->
+                <div class="card w-72 bg-[#F4F7FF] shadow-sm p-4">
+                  <div class="card-body">
+                    <div class="justify-start">
+                      <button class="btn">Google LLC</button>
+                    </div>
+                    <h2 class="card-title text-lg">Integrate OpenAI API</h2>
+                    <button class="btn text-gray-400 text-xs font-thin">Debug, check overlaps, verify onClick.</button>
+                    <div class="flex mt-5">
+                      <div>
+                        <p class="text-gray-400">Deadline</p>
+                        <h2 class="card-title text-lg whitespace-nowrap">21 March 2025</h2>
+                      </div>
+                      <button class="btn btn-primary mt-3 ml-3">Completed</button>
+                    </div>
+                    
+                  </div>
+                </div>
+                <!-- c6 -->
+                <div class="card w-72 bg-[#F4F7FF] shadow-sm p-4">
+                  <div class="card-body">
+                    <div class="justify-start">
+                      <button class="btn">Glassdoar</button>
+                    </div>
+                    <h2 class="card-title text-lg">Improve Job searching</h2>
+                    <button class="btn text-gray-400 text-xs font-thin">Debug, check overlaps, verify onClick.</button>
+                    <div class="flex mt-5">
+                      <div>
+                        <p class="text-gray-400">Deadline</p>
+                        <h2 class="card-title text-lg whitespace-nowrap">21 March 2025</h2>
+                      </div>
+                      <button class="btn btn-primary mt-3 ml-3">Completed</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+          </div>
+           <!-- History Card -->
+        <div class="card relative w-full md:w-[300px] self-start p-6 bg-[#FFFFFF] rounded-lg flex flex-col justify-center items-start mt-0  h-full">
+          <div class="ml-12 flex justify-between">
+            <img src="Images/activity.png" class="h-6 w-6" alt="activity log">
+            <p class="text-xl">Activity Log</p>
+           </div>
+          <div class="card-body ml-6">
+            <button class="btn btn-primary">Clear History</button>
+          </div>
+        </div>
+
+        </div>
+ 
+
+    </section>
+      
+   </header>
+     
+
+
+    
+</body>
+</html>
+
