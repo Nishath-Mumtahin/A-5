@@ -1,4 +1,4 @@
-document.addEventListener("NavEndButton", ()=>{
+document.addEventListener("DOMContentLoaded", ()=>{
 // Random color
 const colorButton = document.querySelector(".navbar-end button:nth-child(2)");
 colorButton.addEventListener("click", ()=>{
@@ -12,8 +12,38 @@ const getRandomColor = () => {
     }
     return color;
 };
+// +- section
+let taskCount = 6;
+let indicatorCount = 23;
+const taskCounter = document.querySelector(".card-title");
+const indicatorBadge = document.querySelector(".indicator-item");
 
-
+document.querySelectorAll(".completed-btn").forEach(button =>{
+    button.addEventListener("click", ()=>{
+        if(!button.disabled){
+            button.disabled = true;
+            taskCount--;
+            indicatorCount++;
+            taskCounter.textContent = taskCount;
+            indicatorBadge.textContent = indicatorCount;
+            // task name etc
+            let taskName = button.closest(".card").querySelector(".card-title").textContent;
+            let time = new Date().toLocaleTimeString();
+            // history log
+            let historyContainer = document.querySelector("#history-list");
+            let entry = document.createElement("div");
+            entry.classList.add("history-entry");
+            entry.innerHTML = `
+            <p class="font-bold">${taskName} completed at ${time}</p>
+            `;
+            
+            alert("Board updated successfully");
+            if (taskCount === 0) {
+                alert("🎉Congrats!!! You have completed all the current tasks")
+            }
+        }
+    })
+})
 
 
 
